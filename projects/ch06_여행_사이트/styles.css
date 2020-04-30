@@ -1,0 +1,43 @@
+* {
+    /* 조건1. 모든 요소 가운데 정렬 */
+    text-align: center;
+}
+
+.logo {
+    /* 조건3. 로고 위 80px 여백 */
+    margin-top: 80px;
+
+    /* 조건2. 로고 가로165 세로 58 */
+    width: 165px;
+    height: 58px;
+}
+
+nav {
+    /* 조건6. 메뉴 위아래 60px여백 */
+    margin: 60px auto;
+}
+
+nav a {
+    /* 조건4. 폰트 helvetica 사이즈 16px 색상 58595B */
+    font-size: 16px;
+    font-family: Helvetica;
+    color: #58595b;
+    /* color: rgb(88,89,91); */
+
+    /* 하이퍼링크 스타일 제거 */
+    text-decoration: none;
+
+    /* 조건6. 각 메뉴 사이 간격 20px */
+    /* 이런 식으로 설정해도 괜찮을까? */
+    margin: auto 10px;
+}
+
+.selected {
+    /* 조건5. 현재창 폰트는 진하게 */
+    font-weight: bold;
+}
+
+.main-img {
+    /* 조건7. 사진의 가로길이는 90% */
+    width: 90%;
+}
