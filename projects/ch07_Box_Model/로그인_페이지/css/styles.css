@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #1BBC9B;
+  }
+  
+  .login-form {
+    width: 300px;
+    margin: 0 auto;/* div 가운데 정렬 */
+    background-color: #eeeff1;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .text-field {
+    width: 100%;/* 입력폼 넘치지 않도록 제한 */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  
+  .submit-btn {
+    color: white;
+    border: none;
+    width: 100%; /*버튼 가로에 딱 맞도록*/
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #1BBC9B;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  
+  .links {
+    text-align: center;/*내부 텍스트 가운데 정렬*/
+  }
+  
+  .links a {
+    color: #9B9B9B;
+    font-size: 12px;
+  }
