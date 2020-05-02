@@ -1,0 +1,10 @@
+h2 {
+  font-size: 30px;
+  padding: 20px;
+}
+h2:nth-child(even) {
+  background-color: #72CCA7;
+}
+h2:nth-child(odd) {
+  background-color: #FA987D;
+}
