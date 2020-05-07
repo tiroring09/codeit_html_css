@@ -1,6 +1,7 @@
-* {
+.logo, .main-img {
     /* 조건1. 모든 요소 가운데 정렬 */
-    text-align: center;
+    display: block;
+    margin: 0 auto;
 }
 
 .logo {
@@ -13,6 +14,8 @@
 }
 
 nav {
+    /* 조건1. 모든 요소 가운데 정렬 */
+    text-align: center;
     /* 조건6. 메뉴 위아래 60px여백 */
     margin: 60px auto;
 }
@@ -28,8 +31,7 @@ nav a {
     text-decoration: none;
 
     /* 조건6. 각 메뉴 사이 간격 20px */
-    /* 이런 식으로 설정해도 괜찮을까? */
-    margin: auto 10px;
+    margin: 0 10px;
 }
 
 .selected {
