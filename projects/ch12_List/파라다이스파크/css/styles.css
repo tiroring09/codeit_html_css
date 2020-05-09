@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  min-width: 768px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* side navbar */
+
+#side-navbar {
+  background-color: black;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+}
+
+/* 코드를 입력하세요! */
+/* 로고 가운데정렬위해서 로고의 display:block해도 되지만, 정확히 로고너비만큼만 링크영역 부여하기 위해 logo의 display:inline-block해주고 wrapper의 text-align:center해주었다*/
+#logo-wrapper {
+  text-align: center;
+}
+
+#logo {
+  display: inline-block;
+  width: 136px;
+  margin-top: 30px;
+}
+
+#side-navbar > ul { /* 직계자손선택자와 모든자손선택자 사이의 성능차이, 클까? */
+  margin: 50px 0 60px 0;
+  padding-left: 22px;
+}
+
+#side-navbar li {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+#side-navbar li > a {
+  display: block; /* 링크인식영역 넓게 부여하기위한 장치 */
+  color: white;
+  text-decoration: none;
+}
+
+#side-navbar li > a:hover { /* 선택자의 길이가 성능에 미치는 영향은 미미하다는데.. */
+  color: gray;
+}
+
+#share {
+  display: inline-block; /* ul과의 중복 margin을 위한 장치, 직접 이미지에 margin부여하는 방법도 있지만 (default display: inline이므로) 이 방식이 의미론적으로 좀더 좋은것같오.. */
+  width: 100%;
+  margin-top: 25px;
+  text-align: center;
+}
+
+#share a:not(:last-child) {
+  margin-right: 13px;
+}
+
+/* main */
+
+#main {
+  margin-left: 250px;
+}
+
+#main .hero-header {
+  text-align: center;
+  background-image: url("../images/hero_header.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 750px;
+  line-height: 750px;
+}
+
+#main .info {
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+#main h1 {
+  margin: 0;
+  margin-bottom: 40px;
+  color: white;
+  font-size: 38px;
+}
+
+#main a {
+  padding: 10px 40px;
+  border: 2px solid white;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
