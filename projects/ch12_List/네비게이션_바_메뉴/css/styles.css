@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+}
+
+#navbar {
+  padding: 0 20px;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.50);
+  height: 60px;
+
+  /* 수직 가운데 정렬 (로고, 메뉴바) */
+  line-height: 60px;
+}
+
+#logo {
+  float: left;
+}
+
+#logo img {
+  /* 로고 수직 가운데 정렬*/
+  vertical-align: middle;
+}
+
+#helper {
+  width: 0;
+  height: 100%;
+}
+
+/* 메뉴 바*/
+#menu {
+  float: right;
+}
+
+#menu ul {
+  margin: 0;  /* ul default margint top & bottom 16px */
+  padding: 0; /* ul default padding left 40px */
+}
+
+#menu li {
+  /* float left방식은 가로로 나열위한 것 */
+  /* display: inline(-block)으로 설정해도 되지만, 보기싫은 줄바꿈공백을 처리해야 함 */
+  float: left;
+  list-style: none;
+  margin: 0 10px;
+}
+
+#menu a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+}
+
+/* hover유무에 따른 조건분기를 한번에 처리할 수 있을까? */
+#menu a:hover {
+  color: #eeeeee;
+}
+
+/* 본문 */
+.hero-header {
+  background-image: url("../images/hero_image.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 670px;
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+
+  line-height: 670px; /* 수직가운데정렬 */
+}
+
+.hero-header .info {
+  /* 수직가운데정렬 */
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+.hero-header .info h1 {
+  font-size: 36px;
+  margin: 0;
+  margin-bottom: 13px;
+  color: white;
+  font-weight: 400;
+}
+
+.hero-header .info h2 {
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 60px;
+  color: white;
+  font-weight: 400;
+}
+
+.hero-header .info a {
+  font-size: 14px;
+  background-color: white;
+  color: #464273;
+  padding: 10px 40px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
